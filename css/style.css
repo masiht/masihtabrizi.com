@@ -24,6 +24,8 @@ body {
 body, html {
   /* important */
   height: 100%;
+  margin:0;
+  padding:0;
 }
 
 a {
@@ -46,7 +48,7 @@ Modules - reusable parts of our design
 	text-align:center;
 }
 .cd-container img {
-    width: 10%;
+    width: 15%;
     border-radius: 25%;
 		margin-top:35px;
 }
@@ -182,6 +184,13 @@ Main components
   z-index: 1;
 }
 
+/* -------- links --------- */
+
+.links-container {
+  padding:10px;
+  padding-bottom:60px;   /* Height of the footer */
+}
+
 .links {
   padding-top: 95px;
 	text-align:center;
@@ -236,7 +245,7 @@ Main components
 
 .cd-fixed-bg {
   position: relative;
-  min-height: 88%;
+  min-height:100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -264,6 +273,7 @@ Main components
 .cd-fixed-bg.cd-bg-1 {
   background-image: url("../img/cd-background-1.jpg");
 }
+/* FIXME: issues with smaller screens */
 @media only screen and (min-width: 768px) {
   .cd-fixed-bg h1, .cd-fixed-bg h2 {
     font-size: 36px;
@@ -300,4 +310,18 @@ Main components
     line-height: 2;
     font-weight: 300;
   }
+}
+
+/* -------- footer shadow -------- */
+.footer-shadow {
+  height: 100px;
+  width: 100%;
+  position:absolute;
+  bottom:0;
+  background: linear-gradient(rgba(0, 0, 0, 0.0), gray);
+}
+
+.footer-shadow div h2 {
+  color: rgba(250, 250, 250, 0.75);
+  text-align:right;
 }
