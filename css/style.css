@@ -277,7 +277,7 @@ Main components
 
 .table-responsive {
   height: 90%;
-  overflow: auto;
+  overflow-x: hidden !important;
 }
 
 .blog-posts-table {
